@@ -32,7 +32,7 @@ export default function ProgramsSection() {
                 )}
                 <div style={{ fontSize: "2.4rem", marginBottom: "1.25rem", display: "inline-block", transition: "transform 0.3s ease" }}>{p.icon}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.4rem", fontWeight: 700, color: "#1a0533", marginBottom: "0.7rem" }}>{p.title}</h3>
-                <p style={{ color: "#666", fontSize: 14, lineHeight: 1.82 }}>{p.desc}</p>
+                <p style={{ color: "#666", fontSize: 14, lineHeight: 1.82 }}><span>{p.shortDesc}</span></p>
                 <div style={{ marginTop: "1.5rem", display: "flex", alignItems: "center", gap: 7 }}>
                   <div style={{ width: 8, height: 8, borderRadius: "50%", background: p.tag === "Active" ? "#0d9e6a" : "#D4A017" }} />
                   <span style={{ fontSize: 12, color: p.tag === "Active" ? "#0d9e6a" : "#D4A017", fontWeight: 700 }}>{p.tag}</span>

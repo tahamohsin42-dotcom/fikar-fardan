@@ -1,31 +1,23 @@
-import Navbar          from "@/components/ui/Navbar";
-import HeroSection     from "@/components/sections/HeroSection";
-import StatsSection    from "@/components/sections/StatsSection";
-import AboutSection    from "@/components/sections/AboutSection";
-import ProgramsSection from "@/components/sections/ProgramsSection";
-import CoursesSection  from "@/components/sections/CoursesSection";
-import DonationSection from "@/components/sections/DonationSection";
-import ChairmanSection from "@/components/sections/ChairmanSection";
-import CTASection      from "@/components/sections/CTASection";
-import Footer          from "@/components/sections/Footer";
-import AIChatWidget    from "@/components/ui/AIChatWidget";
-import WhatsAppButton  from "@/components/ui/WhatsAppButton";
+import type { Metadata } from "next";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import AIChatWidget from "@/components/ui/AIChatWidget";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import HomeClient from "./HomeClient";
+
+export const metadata: Metadata = {
+  title: "Fikr Fardan | Youth Empowerment NGO Pakistan",
+  description: "Fikr Fardan empowers Pakistani youth through free skill training, clean water, and community support.",
+};
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Navbar />
-      <HeroSection />
-      <StatsSection />
-      <AboutSection />
-      <ProgramsSection />
-      <CoursesSection />
-      <DonationSection />
-      <ChairmanSection />
-      <CTASection />
+      <HomeClient />
       <Footer />
       <AIChatWidget />
       <WhatsAppButton />
-    </main>
+    </>
   );
 }

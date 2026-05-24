@@ -1,0 +1,12 @@
+import { NextRequest, NextResponse } from "next/server";
+import { db } from "@/lib/storage";
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const { name, email, phone, skills, availability, message } = body;
+    if (!name || !email || !phone)
+      return NextResponse.json({ error: "All fields required." }, { status: 400 });
+    const record = db.volunteers.add({ name, email, phone, skills: skills || "", availability: availability || "", message: message || "" });
+    return NextResponse.json({ success: true, id: record.id, record });
+  } catch { return NextResponse.json({ error: "Server error." }, { status: 500 }); }
+}
