@@ -13,19 +13,19 @@ export const metadata: Metadata = {
   openGraph: {
     title:       "About Fikr Fardan Foundation",
     description: "Our mission: empower Pakistani youth with skills, not just aid.",
-    url:         "https://fikr-fardan.vercel.app/about",
-    images: [{ url: "https://fikr-fardan.vercel.app/og/og-about.jpg", width: 1200, height: 630 }],
+    url:         "https://fikar-fardan.vercel.app/about",
+    images: [{ url: "https://fikar-fardan.vercel.app/og/og-about.jpg", width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://fikr-fardan.vercel.app/about" },
+  alternates: { canonical: "https://fikar-fardan.vercel.app/about" },
 };
 
 const ABOUT_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   name: "About Fikr Fardan Foundation",
-  url: "https://fikr-fardan.vercel.app/about",
+  url: "https://fikar-fardan.vercel.app/about",
   description: "Fikr Fardan Foundation empowers Pakistani youth through free skill development, clean water, and community welfare.",
-  mainEntity: { "@type": "NGO", name: "Fikr Fardan Foundation", url: "https://fikr-fardan.vercel.app" },
+  mainEntity: { "@type": "NGO", name: "Fikr Fardan Foundation", url: "https://fikar-fardan.vercel.app" },
 };
 
 const VALUES = [

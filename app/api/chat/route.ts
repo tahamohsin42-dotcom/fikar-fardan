@@ -12,7 +12,7 @@ IDENTITY:
 - Chairman: Tuaha Ibn Mohsin
 - Location: Lahore, Punjab, Pakistan
 - Email: fikrfardan@gmail.com | Phone: +92 302 8848500
-- Website: https://fikr-fardan.vercel.app
+- Website: https://fikar-fardan.vercel.app
 - Instagram: instagram.com/fikrfardan | Facebook: facebook.com/fikrfardan
 - YouTube: youtube.com/@FikrFardanFoundation | LinkedIn: linkedin.com/in/fikr-fardan-foundation-2a4aa0400/
 
@@ -47,7 +47,7 @@ IBAN: PK36MEZN0003180106685083
 IMPACT STATS: 2,400+ students trained | 48 water projects | 1,200+ families supported | 320 volunteers | 85+ startups funded | 560+ donors
 
 ENROLLMENT PROCESS:
-1. Visit fikr-fardan.vercel.app/enroll
+1. Visit fikar-fardan.vercel.app/enroll
 2. Browse 23 free courses
 3. Select course and fill enrollment form (Name, Father Name, CNIC, DOB, Gender, Email, Phone, City, Education, Employment, Selected Course, Skills, Personal Statement, Photo, CNIC upload)
 4. Submit and wait for admin review (48 hours)
@@ -88,15 +88,15 @@ Always end with a helpful next step pointing to the website or contact.`;
 const DEMO: Record<string, string> = {
   default:     "Asalaam o Alaikum! 👋 I'm FikrBot, the official assistant of Fikr Fardan Foundation.\n\nI can help you with:\n• Free courses (23 available)\n• Startup Fund programs\n• How to donate\n• Volunteering\n• Community projects\n\nWhat would you like to know?",
   mission:     "Fikr Fardan Foundation is a youth-focused social impact organization committed to transforming potential into opportunity through education, skill development, entrepreneurship support, community welfare, and sustainable empowerment programs.\n\nOur core philosophy: 'We do not believe in dependency. We believe in creating opportunities.' Alhamdulillah, we've already impacted 3,920+ lives! 🌟",
-  courses:     "We offer 23 completely free courses — from SEO and Digital Marketing to Amazon FBA and Web Development!\n\nEnrollment steps:\n1. Visit fikr-fardan.vercel.app/enroll\n2. Select your course\n3. Fill the enrollment form\n4. Our team reviews in 48 hours\n5. Receive LMS login via email\n\nInshAllah, your new career starts here! 📚",
-  donation:    "JazakAllah for your generosity! 🤲\n\nYou can donate to:\n• Water Projects (PKR 5,000–25,000)\n• Startup Fund\n• Sponsor a Student\n• Food Support\n• Emergency Relief\n• General Donation\n\nBank Transfer:\nMeezan Bank | Fikr Fardan Foundation\nIBAN: PK36MEZN0003180106685083\n\nOr visit fikr-fardan.vercel.app/donate ❤️",
-  startup:     "Our Startup Fund delivers real businesses to deserving individuals! 🚀\n\nWe've already delivered:\n• 14 Foodpanda bikes\n• 19 sewing machines\n• 18 freelancing setups\n• 22 handcarts\n• and more...\n\nPrograms include bikes, shops, e-commerce stores, photography kits, laptops, and sewing machines.\n\nVisit fikr-fardan.vercel.app/startup to sponsor a program!",
-  volunteer:   "JazakAllah for wanting to volunteer! 🤝\n\nVolunteer types:\n• Digital Volunteer — content, social media, LMS\n• Field Volunteer — water projects, welfare drives\n• Online Trainer — teach your skills\n• Startup Mentor — guide entrepreneurs\n• Fundraiser — help raise support\n\nApply at fikr-fardan.vercel.app/volunteer or email fikrfardan@gmail.com",
-  water:       "Alhamdulillah! We've completed 48 clean water projects across rural Pakistan, providing safe drinking water to thousands of families.\n\nA single hand pump costs PKR 5,000–25,000 and serves 50–100 families for years.\n\nTo donate: fikr-fardan.vercel.app/donate (select 'Water Projects') 💧",
+  courses:     "We offer 23 completely free courses — from SEO and Digital Marketing to Amazon FBA and Web Development!\n\nEnrollment steps:\n1. Visit fikar-fardan.vercel.app/enroll\n2. Select your course\n3. Fill the enrollment form\n4. Our team reviews in 48 hours\n5. Receive LMS login via email\n\nInshAllah, your new career starts here! 📚",
+  donation:    "JazakAllah for your generosity! 🤲\n\nYou can donate to:\n• Water Projects (PKR 5,000–25,000)\n• Startup Fund\n• Sponsor a Student\n• Food Support\n• Emergency Relief\n• General Donation\n\nBank Transfer:\nMeezan Bank | Fikr Fardan Foundation\nIBAN: PK36MEZN0003180106685083\n\nOr visit fikar-fardan.vercel.app/donate ❤️",
+  startup:     "Our Startup Fund delivers real businesses to deserving individuals! 🚀\n\nWe've already delivered:\n• 14 Foodpanda bikes\n• 19 sewing machines\n• 18 freelancing setups\n• 22 handcarts\n• and more...\n\nPrograms include bikes, shops, e-commerce stores, photography kits, laptops, and sewing machines.\n\nVisit fikar-fardan.vercel.app/startup to sponsor a program!",
+  volunteer:   "JazakAllah for wanting to volunteer! 🤝\n\nVolunteer types:\n• Digital Volunteer — content, social media, LMS\n• Field Volunteer — water projects, welfare drives\n• Online Trainer — teach your skills\n• Startup Mentor — guide entrepreneurs\n• Fundraiser — help raise support\n\nApply at fikar-fardan.vercel.app/volunteer or email fikrfardan@gmail.com",
+  water:       "Alhamdulillah! We've completed 48 clean water projects across rural Pakistan, providing safe drinking water to thousands of families.\n\nA single hand pump costs PKR 5,000–25,000 and serves 50–100 families for years.\n\nTo donate: fikar-fardan.vercel.app/donate (select 'Water Projects') 💧",
   certificate: "Fikr Fardan Foundation issues:\n\n✅ Free E-Certificate — unique ID + QR verification code upon course completion. Download as PDF.\n\n📦 Hard-Copy Certificate — PKR 500 with courier delivery to your address.\n\nContact fikrfardan@gmail.com for certificate queries.",
-  lms:         "Our LMS dashboard is at fikr-fardan.vercel.app/lms\n\nFeatures:\n• Recorded lectures\n• Live class access\n• Assignment submissions\n• Attendance tracking\n• Progress tracking\n• Certificate downloads\n• Support tickets\n\nApproved students receive login credentials via email within 48 hours of enrollment approval.",
-  innovation:  "The Innovation Hub is currently Under Progress 🔧\n\nIt will connect Pakistani youth to:\n• Global fellowships\n• International grants\n• Talent programs\n• Worldwide opportunities\n\nJoin the waitlist at fikr-fardan.vercel.app/programs to be notified when it launches!",
-  contact:     "You can reach Fikr Fardan Foundation through:\n\n📧 Email: fikrfardan@gmail.com\n📞 WhatsApp: +92 302 8848500\n📍 Location: Lahore, Punjab, Pakistan\n🌐 Website: fikr-fardan.vercel.app\n\nWe respond within 24 hours on business days.",
+  lms:         "Our LMS dashboard is at fikar-fardan.vercel.app/lms\n\nFeatures:\n• Recorded lectures\n• Live class access\n• Assignment submissions\n• Attendance tracking\n• Progress tracking\n• Certificate downloads\n• Support tickets\n\nApproved students receive login credentials via email within 48 hours of enrollment approval.",
+  innovation:  "The Innovation Hub is currently Under Progress 🔧\n\nIt will connect Pakistani youth to:\n• Global fellowships\n• International grants\n• Talent programs\n• Worldwide opportunities\n\nJoin the waitlist at fikar-fardan.vercel.app/programs to be notified when it launches!",
+  contact:     "You can reach Fikr Fardan Foundation through:\n\n📧 Email: fikrfardan@gmail.com\n📞 WhatsApp: +92 302 8848500\n📍 Location: Lahore, Punjab, Pakistan\n🌐 Website: fikar-fardan.vercel.app\n\nWe respond within 24 hours on business days.",
   partnership: "Fikr Fardan Foundation welcomes partnerships! 🤝\n\nWe collaborate with:\n• Corporate organizations (CSR)\n• Educational institutions\n• Other NGOs\n• Media companies\n• Community groups\n• Brand sponsors\n\nPlease reach out at fikrfardan@gmail.com with your partnership proposal. InshAllah we can create great impact together!",
 };
 

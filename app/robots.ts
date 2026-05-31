@@ -13,7 +13,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/",
       },
     ],
-    sitemap: "https://fikr-fardan.vercel.app/sitemap.xml",
-    host:    "https://fikr-fardan.vercel.app",
+    sitemap: "https://fikar-fardan.vercel.app/sitemap.xml",
+    host:    "https://fikar-fardan.vercel.app",
   };
 }

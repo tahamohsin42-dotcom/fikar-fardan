@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-const BASE = "https://fikr-fardan.vercel.app";
+const BASE = "https://fikar-fardan.vercel.app";
 
 const PAGES = [
   { url:"/",          priority:1.0,  freq:"weekly"  },

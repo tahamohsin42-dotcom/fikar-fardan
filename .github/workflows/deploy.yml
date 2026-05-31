@@ -1,9 +1,12 @@
-name: Deploy to Vercel
+name: Deploy to Vercel Production
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
+env:
+  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 
 jobs:
   deploy:
@@ -27,8 +30,39 @@ jobs:
       - name: Install Vercel CLI
         run: npm install -g vercel@latest
 
-      - name: Deploy to Vercel Production
+      # Step 1: Link project (creates .vercel/project.json with correct IDs)
+      - name: Link Vercel project
         run: |
-          vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          vercel link \
+            --yes \
+            --project=fikar-fardan \
+            --token=${{ secrets.VERCEL_TOKEN }}
+
+      # Step 2: Pull env vars from Vercel
+      - name: Pull Vercel environment
+        run: |
+          vercel pull \
+            --yes \
+            --environment=production \
+            --token=${{ secrets.VERCEL_TOKEN }}
+
+      # Step 3: Build with Vercel (uses Vercel's build system)
+      - name: Build with Vercel
+        run: |
+          vercel build \
+            --prod \
+            --token=${{ secrets.VERCEL_TOKEN }}
+
+      # Step 4: Deploy pre-built output
+      - name: Deploy to Vercel
+        id: deploy
+        run: |
+          url=$(vercel deploy \
+            --prebuilt \
+            --prod \
+            --token=${{ secrets.VERCEL_TOKEN }})
+          echo "DEPLOYMENT_URL=$url" >> $GITHUB_ENV
+          echo "✅ Deployed to: $url"
+
+      - name: Show live URL
+        run: echo "🌐 Live at ${{ env.DEPLOYMENT_URL }}"

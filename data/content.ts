@@ -12,7 +12,7 @@ export const BRAND = {
   bankAccount: "0318-0106685083",
   bankIBAN:    "PK36MEZN0003180106685083",
   bankTitle:   "Fikr Fardan Foundation",
-  website:     "https://fikr-fardan.vercel.app",
+  website:     "https://fikar-fardan.vercel.app",
   social: {
     instagram: "https://www.instagram.com/fikrfardan/",
     facebook:  "https://www.facebook.com/fikrfardan",

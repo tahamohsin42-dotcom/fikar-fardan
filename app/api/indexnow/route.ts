@@ -4,7 +4,7 @@ const PAGES = [
   "/", "/about", "/programs", "/enroll",
   "/donate", "/volunteer", "/impact", "/contact", "/lms",
 ];
-const BASE = "https://fikr-fardan.vercel.app";
+const BASE = "https://fikar-fardan.vercel.app";
 const KEY  = "4e52424cdd9847b7a934f942fa895984";
 
 export async function POST() {
@@ -13,7 +13,7 @@ export async function POST() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        host:        "fikr-fardan.vercel.app",
+        host:        "fikar-fardan.vercel.app",
         key:         KEY,
         keyLocation: `${BASE}/${KEY}.txt`,
         urlList:     PAGES.map(p => `${BASE}${p}`),
