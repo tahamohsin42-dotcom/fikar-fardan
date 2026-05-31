@@ -27,7 +27,7 @@ export default function ProgramsSection() {
                 onMouseEnter={e => (e.currentTarget.style.transform = "translateY(-4px)")}
                 onMouseLeave={e => (e.currentTarget.style.transform = "translateY(0)")}
               >
-                {p.tag === "Coming Soon" && (
+                {p.tag === "Under Progress" && (
                   <div style={{ position: "absolute", top: 14, right: 14, background: "#D4A017", color: "white", fontSize: 10, padding: "3px 10px", borderRadius: 50, fontWeight: 800, letterSpacing: "1px" }}>SOON</div>
                 )}
                 <div style={{ fontSize: "2.4rem", marginBottom: "1.25rem", display: "inline-block", transition: "transform 0.3s ease" }}>{p.icon}</div>

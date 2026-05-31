@@ -191,7 +191,7 @@ export default function HomeClient() {
           </FadeSection>
           <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(280px,1fr))", gap:"1.5rem", marginBottom:"2.5rem" }}>
             {STARTUP_PROGRAMS.slice(0,4).map((p, i)=>{
-              const pct = Math.min(100,Math.round((p.raised/p.goal)*100));
+              
               return (
                 <FadeSection key={p.id} delay={i*.08}>
                   <div className="card-hover" style={{ background:"rgba(255,255,255,.045)", border:"1px solid rgba(107,45,143,.3)", borderRadius:18, overflow:"hidden", display:"flex", flexDirection:"column" }}>
@@ -205,14 +205,9 @@ export default function HomeClient() {
                     <div style={{ padding:"1.25rem", flex:1, display:"flex", flexDirection:"column" }}>
                       <h3 style={{ fontSize:14, fontWeight:700, color:"white", marginBottom:".4rem" }}>{p.title}</h3>
                       <p style={{ color:"rgba(255,255,255,.42)", fontSize:12, lineHeight:1.72, flex:1, marginBottom:".75rem" }}>{p.desc.slice(0,80)}...</p>
-                      <div style={{ marginBottom:".75rem" }}>
-                        <div style={{ display:"flex", justifyContent:"space-between", fontSize:11, marginBottom:4 }}>
-                          <span style={{ color:"rgba(255,255,255,.38)" }}>PKR {p.raised.toLocaleString()} raised</span>
-                          <span style={{ color:"#D4A017", fontWeight:700 }}>{pct}%</span>
-                        </div>
-                        <div style={{ height:5, borderRadius:3, background:"rgba(255,255,255,.1)", overflow:"hidden" }}>
-                          <div style={{ height:"100%", borderRadius:3, background:"linear-gradient(90deg,#D4A017,#F0C040)", width:`${pct}%` }} />
-                        </div>
+                      <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:".75rem" }}>
+                        <div style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:"1.9rem", fontWeight:700, color:"#D4A017", lineHeight:1 }}>{p.delivered}</div>
+                        <div style={{ fontSize:11, color:"rgba(255,255,255,.5)", lineHeight:1.35 }}>{p.unit}<br />delivered so far</div>
                       </div>
                       <Link href="/startup"><button className="btn-primary" style={{ width:"100%", padding:9, borderRadius:8, fontSize:12, fontWeight:700 }}>{p.cta} →</button></Link>
                     </div>
@@ -253,7 +248,7 @@ export default function HomeClient() {
                     <div style={{ fontSize:"1.5rem", marginBottom:".7rem" }}>{p.icon}</div>
                     <h3 style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:"1.2rem", fontWeight:700, color:"#1a0533", marginBottom:".5rem" }}>{p.title}</h3>
                     <p style={{ color:"#777", fontSize:13, lineHeight:1.78, flex:1, marginBottom:"1rem" }}>{p.shortDesc}</p>
-                    <Link href="/enroll"><button className="btn-primary" style={{ width:"100%", padding:"10px", borderRadius:9, fontSize:13 }}>Apply Now →</button></Link>
+                    <Link href={p.link}><button className={p.tag==="Under Progress"?"btn-outline":"btn-primary"} style={{ width:"100%", padding:"10px", borderRadius:9, fontSize:13 }}>{p.tag==="Under Progress"?"Under Progress 🔧":"Apply Now →"}</button></Link>
                   </div>
                 </div>
               </FadeSection>

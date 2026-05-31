@@ -5,14 +5,14 @@ import { BRAND } from "@/data/content";
 
 interface Message { role: "user" | "assistant"; content: string; }
 
-const WELCOME = `Asalaam o Alaikum! 👋 I'm Fikar Assistant.\n\nAsk me about:\n• Free courses (23 available!)\n• Startup Fund programs\n• How to donate\n• Volunteer opportunities\n• Impact & projects`;
+const WELCOME = `Asalaam o Alaikum! 👋 I'm FikrBot.\n\nAsk me about:\n• Free courses (23 available!)\n• Startup Fund programs\n• How to donate\n• Volunteer opportunities\n• Impact & projects`;
 
 const QUICK_QS = [
-  "What free courses do you offer?",
+  "What courses are free?",
   "How can I donate?",
-  "Tell me about the Startup Fund",
+  "Startup Fund programs",
   "How do I enroll?",
-  "Where does donation go?",
+  "How to volunteer?",
 ];
 
 export default function AIChatWidget() {
@@ -63,7 +63,7 @@ export default function AIChatWidget() {
                 <Image src="/logo-icon.jpg" alt="Fikr Fardan" fill style={{ objectFit:"contain" }} />
               </div>
               <div>
-                <div style={{ color:"white", fontWeight:700, fontSize:14 }}>Fikar Assistant</div>
+                <div style={{ color:"white", fontWeight:700, fontSize:14 }}>FikrBot</div>
                 <div style={{ color:"rgba(255,255,255,.55)", fontSize:11, display:"flex", alignItems:"center", gap:5 }}>
                   <span style={{ width:7, height:7, borderRadius:"50%", background:"#4ade80", display:"inline-block" }} />
                   Online · Fikr Fardan Foundation

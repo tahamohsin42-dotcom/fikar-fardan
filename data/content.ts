@@ -24,15 +24,16 @@ export const BRAND = {
 
 // ─── STATS ───────────────────────────────────────────────────────────────────
 export const STATS = [
-  { value: 2400, suffix: "+", label: "Students Trained",       icon: "🎓" },
-  { value: 48,   suffix: "",  label: "Water Projects",          icon: "💧" },
-  { value: 1200, suffix: "+", label: "Families Supported",      icon: "🏡" },
-  { value: 320,  suffix: "",  label: "Volunteers",               icon: "🤝" },
-  { value: 85,   suffix: "+", label: "Startup Funds Given",     icon: "🚀" },
-  { value: 560,  suffix: "+", label: "Donors",                   icon: "❤️" },
+  { value: 2400, suffix: "+", label: "Students Trained",      icon: "🎓" },
+  { value: 48,   suffix: "",  label: "Water Projects",         icon: "💧" },
+  { value: 1200, suffix: "+", label: "Families Supported",     icon: "🏡" },
+  { value: 320,  suffix: "",  label: "Volunteers",              icon: "🤝" },
+  { value: 85,   suffix: "+", label: "Startups Funded",        icon: "🚀" },
+  { value: 560,  suffix: "+", label: "Donors",                  icon: "❤️" },
 ] as const;
 
-// ─── PROGRAMS ────────────────────────────────────────────────────────────────
+// ─── PROGRAMS ─────────────────────────────────────────────────────────────────
+// link: where the CTA button takes the user
 export const PROGRAMS = [
   {
     id: "skill-dev",
@@ -43,6 +44,7 @@ export const PROGRAMS = [
     duration: "3 months",
     seats: 50,
     tag: "Active" as const,
+    link: "/enroll",           // → Enroll page
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
     courses: ["AI Tools", "Graphic Design", "Digital Marketing", "Freelancing"],
   },
@@ -55,6 +57,7 @@ export const PROGRAMS = [
     duration: "6 months",
     seats: 20,
     tag: "Active" as const,
+    link: "/startup",          // → Startup Fund page ✅
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
     courses: ["Business Plan", "Marketing", "Finance Basics", "Networking"],
   },
@@ -67,6 +70,7 @@ export const PROGRAMS = [
     duration: "Ongoing",
     seats: 0,
     tag: "Active" as const,
+    link: "/donate",           // → Donation page ✅
     image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80",
     courses: ["Water Access", "Sanitation", "Community Welfare"],
   },
@@ -78,7 +82,8 @@ export const PROGRAMS = [
     fullDesc: "Our upcoming Innovation Hub will connect talented Pakistani youth to global fellowships, international grants, and talent programs. We're building bridges between local potential and global opportunity.",
     duration: "TBD",
     seats: 30,
-    tag: "Coming Soon" as const,
+    tag: "Under Progress" as const,   // ✅ changed from "Coming Soon"
+    link: "/programs",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
     courses: ["Fellowships", "International Grants", "Global Networking"],
   },
@@ -113,31 +118,32 @@ export const COURSES = [
 
 // ─── DONATION CAUSES ─────────────────────────────────────────────────────────
 export const DONATION_CAUSES = [
-  { id:"general",    icon:"❤️",  title:"General Donation",           desc:"Flexible support directed to highest-impact needs.",            amounts:[500,1000,5000],   color:"#6B2D8F" },
-  { id:"water",      icon:"💧",  title:"Water Projects",             desc:"Install clean drinking water hand pumps in rural villages.",    amounts:[5000,10000,25000], color:"#0e7fb0" },
-  { id:"food",       icon:"🍲",  title:"Food Support",               desc:"Provide nutritious meals to families in need.",                 amounts:[500,1000,2500],   color:"#b08010" },
-  { id:"education",  icon:"🎓",  title:"Education Support",          desc:"Fund a student's skill training and learning materials.",       amounts:[1000,2500,5000],  color:"#6B2D8F" },
-  { id:"startup",    icon:"🚀",  title:"Startup Fund",               desc:"Help a deserving individual launch their first business.",      amounts:[5000,15000,25000], color:"#8B4DB8" },
-  { id:"community",  icon:"🌍",  title:"Community Development",      desc:"Support sanitation, welfare, and infrastructure projects.",     amounts:[2500,10000,25000], color:"#0d9e6a" },
-  { id:"student",    icon:"📚",  title:"Sponsor a Student",          desc:"Cover full course fees for a deserving student.",               amounts:[2000,5000,10000], color:"#5a2ba8" },
-  { id:"orphan",     icon:"👶",  title:"Orphan Care",               desc:"Food, education, clothing, and care for an orphan child.",     amounts:[2000,5000,10000], color:"#d05a2b" },
-  { id:"emergency",  icon:"🚨",  title:"Emergency Relief",           desc:"Rapid response to floods, disasters, and urgent family crises.", amounts:[1000,3000,10000], color:"#c0392b" },
-  { id:"qurbani",    icon:"🐑",  title:"Qurbani Projects",           desc:"Share the blessings of Eid with deserving families.",          amounts:[15000,25000,50000], color:"#8B4DB8" },
+  { id:"general",    icon:"❤️",  title:"General Donation",           desc:"Flexible support directed to highest-impact needs.",                 amounts:[500,1000,5000],    color:"#6B2D8F" },
+  { id:"water",      icon:"💧",  title:"Water Projects",             desc:"Install clean drinking water hand pumps in rural villages.",         amounts:[5000,10000,25000],  color:"#0e7fb0" },
+  { id:"food",       icon:"🍲",  title:"Food Support",               desc:"Provide nutritious meals to families in need.",                      amounts:[500,1000,2500],    color:"#b08010" },
+  { id:"education",  icon:"🎓",  title:"Education Support",          desc:"Fund a student's skill training and learning materials.",            amounts:[1000,2500,5000],   color:"#6B2D8F" },
+  { id:"startup",    icon:"🚀",  title:"Startup Fund",               desc:"Help a deserving individual launch their first business.",           amounts:[5000,15000,25000],  color:"#8B4DB8" },
+  { id:"community",  icon:"🌍",  title:"Community Development",      desc:"Support sanitation, welfare, and infrastructure projects.",          amounts:[2500,10000,25000],  color:"#0d9e6a" },
+  { id:"student",    icon:"📚",  title:"Sponsor a Student",          desc:"Cover full course fees for a deserving student.",                    amounts:[2000,5000,10000],  color:"#5a2ba8" },
+  { id:"orphan",     icon:"👶",  title:"Orphan Care",               desc:"Food, education, clothing, and care for an orphan child.",          amounts:[2000,5000,10000],  color:"#d05a2b" },
+  { id:"emergency",  icon:"🚨",  title:"Emergency Relief",           desc:"Rapid response to floods, disasters, and urgent family crises.",     amounts:[1000,3000,10000],  color:"#c0392b" },
+  { id:"qurbani",    icon:"🐑",  title:"Qurbani Projects",           desc:"Share the blessings of Eid with deserving families.",               amounts:[15000,25000,50000], color:"#8B4DB8" },
 ] as const;
 
 // ─── STARTUP FUND PROGRAMS ────────────────────────────────────────────────────
+// "delivered" = number of units/people already helped (shown instead of raised/goal progress bar)
 export const STARTUP_PROGRAMS = [
-  { id:"foodpanda-bike",  icon:"🛵", title:"Bike for Foodpanda Rider",     desc:"Help a deserving individual start earning through food delivery — a sustainable, daily income source.",    goal:35000,  raised:28000, impact:["Sustainable income","Family support","Self-reliance"],  cta:"Sponsor a Rider",    image:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" },
-  { id:"uber-bike",       icon:"🏍️", title:"Bike for Uber Rider",          desc:"Provide a ride-hailing opportunity that creates daily earning power and long-term economic independence.",  goal:40000,  raised:15000, impact:["Ride-hailing job","Daily earnings","Independence"],       cta:"Donate a Bike",      image:"https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" },
-  { id:"ecom-store",      icon:"🛒", title:"E-Commerce Store Startup",     desc:"Fund the setup of an online store — products, listing, and marketing — for a young digital entrepreneur.",   goal:25000,  raised:18000, impact:["Online business","Digital skills","Growth potential"],    cta:"Sponsor a Business", image:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
-  { id:"handcart",        icon:"🛒", title:"Handcart Business",            desc:"A simple handcart gives a street vendor dignity, daily income, and family support through honest work.",       goal:12000,  raised:9500,  impact:["Daily income","Self-employment","Dignified livelihood"],   cta:"Donate a Handcart",  image:"https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80" },
-  { id:"pushcart",        icon:"🧺", title:"Pushcart Business",            desc:"A pushcart business enables immediate earning, small business ownership, and stability for a family.",         goal:15000,  raised:7000,  impact:["Small business","Immediate earning","Family support"],     cta:"Sponsor a Pushcart", image:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&q=80" },
-  { id:"barrow",          icon:"⚒️", title:"Barrow Business",              desc:"Help a laborer increase daily productivity and income with the right tools to build a sustainable livelihood.", goal:10000,  raised:4200,  impact:["Better income","Productivity","Sustainability"],           cta:"Support a Worker",   image:"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" },
-  { id:"shop",            icon:"🏪", title:"Small Shop Setup",             desc:"Establish a family-owned shop that generates recurring income and builds real economic roots in the community.", goal:50000,  raised:32000, impact:["Family business","Recurring income","Community growth"],   cta:"Sponsor a Shop",     image:"https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=80" },
-  { id:"freelancing",     icon:"💻", title:"Freelancing Setup",            desc:"Laptop, internet, and training — everything a young freelancer needs to access global earning opportunities.",   goal:80000,  raised:55000, impact:["Global earning","Digital empowerment","Remote work"],      cta:"Empower a Freelancer",image:"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" },
-  { id:"photography",     icon:"📸", title:"Photography Starter Kit",      desc:"Camera, lenses, and editing tools to launch a creative photography career with real income potential.",          goal:45000,  raised:20000, impact:["Creative career","Professional skills","Earnings"],        cta:"Sponsor a Creator",  image:"https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&q=80" },
-  { id:"digital-mkt",     icon:"📊", title:"Digital Marketing Setup",      desc:"Equip a young marketer with courses, tools, and a laptop to begin earning from high-demand digital skills.",    goal:60000,  raised:38000, impact:["High-demand skills","Freelancing","Employment"],           cta:"Support Digital Skills",image:"https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&q=80" },
-  { id:"sewing",          icon:"🪡", title:"Sewing Machine Support",       desc:"A sewing machine empowers women to run home-based tailoring businesses and achieve financial independence.",     goal:20000,  raised:16000, impact:["Women's empowerment","Home business","Independence"],      cta:"Sponsor a Machine",  image:"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80" },
+  { id:"foodpanda-bike",  icon:"🛵", title:"Bike for Foodpanda Rider",     delivered:14, unit:"Bikes Delivered",    desc:"Help a deserving individual start earning through food delivery — a sustainable, daily income source.",    impact:["Sustainable income","Family support","Self-reliance"],  cta:"Sponsor a Rider",      image:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" },
+  { id:"uber-bike",       icon:"🏍️", title:"Bike for Uber Rider",          delivered:9,  unit:"Bikes Delivered",    desc:"Provide a ride-hailing opportunity that creates daily earning power and long-term economic independence.",  impact:["Ride-hailing job","Daily earnings","Independence"],       cta:"Donate a Bike",        image:"https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" },
+  { id:"ecom-store",      icon:"🛒", title:"E-Commerce Store Startup",     delivered:7,  unit:"Stores Launched",    desc:"Fund the setup of an online store — products, listing, and marketing — for a young digital entrepreneur.",   impact:["Online business","Digital skills","Growth potential"],    cta:"Sponsor a Business",   image:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
+  { id:"handcart",        icon:"🛒", title:"Handcart Business",            delivered:22, unit:"Handcarts Delivered", desc:"A simple handcart gives a street vendor dignity, daily income, and family support through honest work.",       impact:["Daily income","Self-employment","Dignified livelihood"],   cta:"Donate a Handcart",    image:"https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80" },
+  { id:"pushcart",        icon:"🧺", title:"Pushcart Business",            delivered:11, unit:"Pushcarts Delivered", desc:"A pushcart business enables immediate earning, small business ownership, and stability for a family.",         impact:["Small business","Immediate earning","Family support"],     cta:"Sponsor a Pushcart",   image:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&q=80" },
+  { id:"barrow",          icon:"⚒️", title:"Barrow Business",              delivered:8,  unit:"Workers Supported",  desc:"Help a laborer increase daily productivity and income with the right tools to build a sustainable livelihood.", impact:["Better income","Productivity","Sustainability"],           cta:"Support a Worker",     image:"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" },
+  { id:"shop",            icon:"🏪", title:"Small Shop Setup",             delivered:5,  unit:"Shops Opened",       desc:"Establish a family-owned shop that generates recurring income and builds real economic roots in the community.", impact:["Family business","Recurring income","Community growth"],   cta:"Sponsor a Shop",       image:"https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=80" },
+  { id:"freelancing",     icon:"💻", title:"Freelancing Setup",            delivered:18, unit:"Freelancers Equipped",desc:"Laptop, internet, and training — everything a young freelancer needs to access global earning opportunities.",   impact:["Global earning","Digital empowerment","Remote work"],      cta:"Empower a Freelancer", image:"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" },
+  { id:"photography",     icon:"📸", title:"Photography Starter Kit",      delivered:6,  unit:"Kits Delivered",     desc:"Camera, lenses, and editing tools to launch a creative photography career with real income potential.",          impact:["Creative career","Professional skills","Earnings"],        cta:"Sponsor a Creator",    image:"https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&q=80" },
+  { id:"digital-mkt",     icon:"📊", title:"Digital Marketing Setup",      delivered:12, unit:"Marketers Equipped",  desc:"Equip a young marketer with courses, tools, and a laptop to begin earning from high-demand digital skills.",    impact:["High-demand skills","Freelancing","Employment"],           cta:"Support Digital Skills",image:"https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&q=80" },
+  { id:"sewing",          icon:"🪡", title:"Sewing Machine Support",       delivered:19, unit:"Machines Delivered",  desc:"A sewing machine empowers women to run home-based tailoring businesses and achieve financial independence.",     impact:["Women's empowerment","Home business","Independence"],      cta:"Sponsor a Machine",    image:"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80" },
 ] as const;
 
 // ─── IMPACT STORIES ──────────────────────────────────────────────────────────
