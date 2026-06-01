@@ -45,7 +45,7 @@ export const PROGRAMS = [
     seats: 50,
     tag: "Active" as const,
     link: "/enroll",           // → Enroll page
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=85&auto=format&fit=crop",
     courses: ["AI Tools", "Graphic Design", "Digital Marketing", "Freelancing"],
   },
   {
@@ -58,7 +58,7 @@ export const PROGRAMS = [
     seats: 20,
     tag: "Active" as const,
     link: "/startup",          // → Startup Fund page ✅
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=85&auto=format&fit=crop",
     courses: ["Business Plan", "Marketing", "Finance Basics", "Networking"],
   },
   {
@@ -71,7 +71,7 @@ export const PROGRAMS = [
     seats: 0,
     tag: "Active" as const,
     link: "/donate",           // → Donation page ✅
-    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1518398046578-8cca57782e17?w=800&q=85&auto=format&fit=crop",
     courses: ["Water Access", "Sanitation", "Community Welfare"],
   },
   {
@@ -84,7 +84,7 @@ export const PROGRAMS = [
     seats: 30,
     tag: "Under Progress" as const,   // ✅ changed from "Coming Soon"
     link: "/programs",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=85&auto=format&fit=crop",
     courses: ["Fellowships", "International Grants", "Global Networking"],
   },
 ] as const;
@@ -133,17 +133,17 @@ export const DONATION_CAUSES = [
 // ─── STARTUP FUND PROGRAMS ────────────────────────────────────────────────────
 // "delivered" = number of units/people already helped (shown instead of raised/goal progress bar)
 export const STARTUP_PROGRAMS = [
-  { id:"foodpanda-bike",  icon:"🛵", title:"Bike for Foodpanda Rider",     delivered:14, unit:"Bikes Delivered",    desc:"Help a deserving individual start earning through food delivery — a sustainable, daily income source.",    impact:["Sustainable income","Family support","Self-reliance"],  cta:"Sponsor a Rider",      image:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" },
-  { id:"uber-bike",       icon:"🏍️", title:"Bike for Uber Rider",          delivered:9,  unit:"Bikes Delivered",    desc:"Provide a ride-hailing opportunity that creates daily earning power and long-term economic independence.",  impact:["Ride-hailing job","Daily earnings","Independence"],       cta:"Donate a Bike",        image:"https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" },
-  { id:"ecom-store",      icon:"🛒", title:"E-Commerce Store Startup",     delivered:7,  unit:"Stores Launched",    desc:"Fund the setup of an online store — products, listing, and marketing — for a young digital entrepreneur.",   impact:["Online business","Digital skills","Growth potential"],    cta:"Sponsor a Business",   image:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
-  { id:"handcart",        icon:"🛒", title:"Handcart Business",            delivered:22, unit:"Handcarts Delivered", desc:"A simple handcart gives a street vendor dignity, daily income, and family support through honest work.",       impact:["Daily income","Self-employment","Dignified livelihood"],   cta:"Donate a Handcart",    image:"https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80" },
-  { id:"pushcart",        icon:"🧺", title:"Pushcart Business",            delivered:11, unit:"Pushcarts Delivered", desc:"A pushcart business enables immediate earning, small business ownership, and stability for a family.",         impact:["Small business","Immediate earning","Family support"],     cta:"Sponsor a Pushcart",   image:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&q=80" },
-  { id:"barrow",          icon:"⚒️", title:"Barrow Business",              delivered:8,  unit:"Workers Supported",  desc:"Help a laborer increase daily productivity and income with the right tools to build a sustainable livelihood.", impact:["Better income","Productivity","Sustainability"],           cta:"Support a Worker",     image:"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" },
-  { id:"shop",            icon:"🏪", title:"Small Shop Setup",             delivered:5,  unit:"Shops Opened",       desc:"Establish a family-owned shop that generates recurring income and builds real economic roots in the community.", impact:["Family business","Recurring income","Community growth"],   cta:"Sponsor a Shop",       image:"https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=80" },
-  { id:"freelancing",     icon:"💻", title:"Freelancing Setup",            delivered:18, unit:"Freelancers Equipped",desc:"Laptop, internet, and training — everything a young freelancer needs to access global earning opportunities.",   impact:["Global earning","Digital empowerment","Remote work"],      cta:"Empower a Freelancer", image:"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" },
-  { id:"photography",     icon:"📸", title:"Photography Starter Kit",      delivered:6,  unit:"Kits Delivered",     desc:"Camera, lenses, and editing tools to launch a creative photography career with real income potential.",          impact:["Creative career","Professional skills","Earnings"],        cta:"Sponsor a Creator",    image:"https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&q=80" },
-  { id:"digital-mkt",     icon:"📊", title:"Digital Marketing Setup",      delivered:12, unit:"Marketers Equipped",  desc:"Equip a young marketer with courses, tools, and a laptop to begin earning from high-demand digital skills.",    impact:["High-demand skills","Freelancing","Employment"],           cta:"Support Digital Skills",image:"https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&q=80" },
-  { id:"sewing",          icon:"🪡", title:"Sewing Machine Support",       delivered:19, unit:"Machines Delivered",  desc:"A sewing machine empowers women to run home-based tailoring businesses and achieve financial independence.",     impact:["Women's empowerment","Home business","Independence"],      cta:"Sponsor a Machine",    image:"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80" },
+  { id:"foodpanda-bike",  icon:"🛵", title:"Bike for Foodpanda Rider",     delivered:14, unit:"Bikes Delivered",    desc:"Help a deserving individual start earning through food delivery — a sustainable, daily income source.",    impact:["Sustainable income","Family support","Self-reliance"],  cta:"Sponsor a Rider",      image:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85&auto=format&fit=crop" },
+  { id:"uber-bike",       icon:"🏍️", title:"Bike for Uber Rider",          delivered:9,  unit:"Bikes Delivered",    desc:"Provide a ride-hailing opportunity that creates daily earning power and long-term economic independence.",  impact:["Ride-hailing job","Daily earnings","Independence"],       cta:"Donate a Bike",        image:"https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=85&auto=format&fit=crop" },
+  { id:"ecom-store",      icon:"🛒", title:"E-Commerce Store Startup",     delivered:7,  unit:"Stores Launched",    desc:"Fund the setup of an online store — products, listing, and marketing — for a young digital entrepreneur.",   impact:["Online business","Digital skills","Growth potential"],    cta:"Sponsor a Business",   image:"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=85&auto=format&fit=crop" },
+  { id:"handcart",        icon:"🛒", title:"Handcart Business",            delivered:22, unit:"Handcarts Delivered", desc:"A simple handcart gives a street vendor dignity, daily income, and family support through honest work.",       impact:["Daily income","Self-employment","Dignified livelihood"],   cta:"Donate a Handcart",    image:"https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=85&auto=format&fit=crop" },
+  { id:"pushcart",        icon:"🧺", title:"Pushcart Business",            delivered:11, unit:"Pushcarts Delivered", desc:"A pushcart business enables immediate earning, small business ownership, and stability for a family.",         impact:["Small business","Immediate earning","Family support"],     cta:"Sponsor a Pushcart",   image:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&q=85&auto=format&fit=crop" },
+  { id:"barrow",          icon:"⚒️", title:"Barrow Business",              delivered:8,  unit:"Workers Supported",  desc:"Help a laborer increase daily productivity and income with the right tools to build a sustainable livelihood.", impact:["Better income","Productivity","Sustainability"],           cta:"Support a Worker",     image:"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=85&auto=format&fit=crop" },
+  { id:"shop",            icon:"🏪", title:"Small Shop Setup",             delivered:5,  unit:"Shops Opened",       desc:"Establish a family-owned shop that generates recurring income and builds real economic roots in the community.", impact:["Family business","Recurring income","Community growth"],   cta:"Sponsor a Shop",       image:"https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=85&auto=format&fit=crop" },
+  { id:"freelancing",     icon:"💻", title:"Freelancing Setup",            delivered:18, unit:"Freelancers Equipped",desc:"Laptop, internet, and training — everything a young freelancer needs to access global earning opportunities.",   impact:["Global earning","Digital empowerment","Remote work"],      cta:"Empower a Freelancer", image:"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=85&auto=format&fit=crop" },
+  { id:"photography",     icon:"📸", title:"Photography Starter Kit",      delivered:6,  unit:"Kits Delivered",     desc:"Camera, lenses, and editing tools to launch a creative photography career with real income potential.",          impact:["Creative career","Professional skills","Earnings"],        cta:"Sponsor a Creator",    image:"https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&q=85&auto=format&fit=crop" },
+  { id:"digital-mkt",     icon:"📊", title:"Digital Marketing Setup",      delivered:12, unit:"Marketers Equipped",  desc:"Equip a young marketer with courses, tools, and a laptop to begin earning from high-demand digital skills.",    impact:["High-demand skills","Freelancing","Employment"],           cta:"Support Digital Skills",image:"https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&q=85&auto=format&fit=crop" },
+  { id:"sewing",          icon:"🪡", title:"Sewing Machine Support",       delivered:19, unit:"Machines Delivered",  desc:"A sewing machine empowers women to run home-based tailoring businesses and achieve financial independence.",     impact:["Women's empowerment","Home business","Independence"],      cta:"Sponsor a Machine",    image:"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=85&auto=format&fit=crop" },
 ] as const;
 
 // ─── IMPACT STORIES ──────────────────────────────────────────────────────────

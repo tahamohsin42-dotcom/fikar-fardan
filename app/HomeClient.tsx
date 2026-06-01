@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import FadeSection from "@/components/ui/FadeSection";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import { InstagramIcon, FacebookIcon, YouTubeIcon, LinkedInIcon } from "@/components/ui/SocialIcons";
 import { STATS, PROGRAMS, COURSES, DONATION_CAUSES, BRAND, IMPACT_STORIES, STARTUP_PROGRAMS } from "@/data/content";
 
 export default function HomeClient() {
@@ -18,7 +19,7 @@ export default function HomeClient() {
     <main>
       {/* ── HERO ── */}
       <section style={{ minHeight:"100vh", position:"relative", overflow:"hidden", display:"flex", alignItems:"center" }}>
-        <div style={{ position:"absolute", inset:0, backgroundImage:"url(https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1400&q=80)", backgroundSize:"cover", backgroundPosition:"center top", filter:"brightness(.2)" }} />
+        <div style={{ position:"absolute", inset:0, backgroundImage:"url(https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&q=85&auto=format&fit=crop)", backgroundSize:"cover", backgroundPosition:"center top", filter:"brightness(.2)" }} />
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(135deg,rgba(13,5,32,.97) 0%,rgba(26,5,51,.9) 55%,rgba(13,21,51,.85) 100%)" }} />
         <div style={{ position:"absolute", top:"8%", left:"2%", width:480, height:480, borderRadius:"50%", background:"radial-gradient(circle,rgba(107,45,143,.32) 0%,transparent 70%)", pointerEvents:"none" }} />
         <div style={{ position:"absolute", bottom:"5%", right:"3%", width:560, height:560, borderRadius:"50%", background:"radial-gradient(circle,rgba(212,160,23,.12) 0%,transparent 70%)", pointerEvents:"none" }} />
@@ -70,14 +71,15 @@ export default function HomeClient() {
         {/* Social links row on hero */}
         <div style={{ position:"absolute", bottom:"2.5rem", right:"1.5rem", display:"flex", gap:8 }}>
           {[
-            { href:BRAND.social.instagram, label:"IG", color:"#E1306C" },
-            { href:BRAND.social.facebook,  label:"FB", color:"#1877F2" },
-            { href:BRAND.social.youtube,   label:"YT", color:"#FF0000" },
-            { href:BRAND.social.linkedin,  label:"LI", color:"#0A66C2" },
+            { href:BRAND.social.instagram, Icon:InstagramIcon, label:"Instagram", bg:"linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)" },
+            { href:BRAND.social.facebook,  Icon:FacebookIcon,  label:"Facebook",  bg:"#1877F2" },
+            { href:BRAND.social.youtube,   Icon:YouTubeIcon,   label:"YouTube",   bg:"#FF0000" },
+            { href:BRAND.social.linkedin,  Icon:LinkedInIcon,  label:"LinkedIn",  bg:"#0A66C2" },
           ].map(s=>(
             <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-              style={{ width:34, height:34, borderRadius:8, background:s.color, display:"flex", alignItems:"center", justifyContent:"center", color:"white", fontSize:10, fontWeight:800, textDecoration:"none", opacity:.7 }}>
-              {s.label}
+              aria-label={`Follow Fikr Fardan on ${s.label}`}
+              style={{ width:36, height:36, borderRadius:9, background:s.bg, display:"flex", alignItems:"center", justifyContent:"center", textDecoration:"none", opacity:.8, boxShadow:"0 2px 10px rgba(0,0,0,.3)" }}>
+              <s.Icon size={17} color="white" />
             </a>
           ))}
         </div>
@@ -360,13 +362,15 @@ export default function HomeClient() {
             <div style={{ marginTop:"2.5rem", display:"flex", gap:"1rem", justifyContent:"center", alignItems:"center", flexWrap:"wrap" }}>
               <span style={{ fontSize:13, color:"#aaa" }}>Follow us:</span>
               {[
-                { href:BRAND.social.instagram, label:"Instagram", color:"#E1306C" },
-                { href:BRAND.social.facebook,  label:"Facebook",  color:"#1877F2" },
-                { href:BRAND.social.youtube,   label:"YouTube",   color:"#FF0000" },
-                { href:BRAND.social.linkedin,  label:"LinkedIn",  color:"#0A66C2" },
+                { href:BRAND.social.instagram, Icon:InstagramIcon, label:"Instagram", bg:"linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)" },
+                { href:BRAND.social.facebook,  Icon:FacebookIcon,  label:"Facebook",  bg:"#1877F2" },
+                { href:BRAND.social.youtube,   Icon:YouTubeIcon,   label:"YouTube",   bg:"#FF0000" },
+                { href:BRAND.social.linkedin,  Icon:LinkedInIcon,  label:"LinkedIn",  bg:"#0A66C2" },
               ].map(s=>(
                 <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-                  style={{ padding:"7px 16px", borderRadius:50, background:s.color, color:"white", fontSize:12, fontWeight:700, textDecoration:"none" }}>
+                  aria-label={`Follow Fikr Fardan on ${s.label}`}
+                  style={{ display:"flex", alignItems:"center", gap:7, padding:"9px 18px", borderRadius:50, background:s.bg, color:"white", fontSize:12, fontWeight:700, textDecoration:"none" }}>
+                  <s.Icon size={15} color="white" />
                   {s.label}
                 </a>
               ))}

@@ -59,7 +59,8 @@ export default function ContactPage() {
       <Navbar />
       <PageHero badge="Contact Us" title="Get in" highlight="Touch"
         subtitle="Questions, partnerships, or just want to say Asalaam o Alaikum — we're here."
-        image="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=80" />
+        image="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=85&auto=format&fit=crop"
+        imageAlt="Fikr Fardan Foundation team and operations center in Lahore Pakistan" />
 
       <section style={{ background:"#F8F6FB", padding:"5.5rem 1.5rem" }}>
         <div style={{ maxWidth:1200, margin:"0 auto", display:"grid", gridTemplateColumns:"1fr 1.6fr", gap:"4rem", alignItems:"start" }} className="contact-grid">

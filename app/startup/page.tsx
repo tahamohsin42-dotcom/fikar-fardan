@@ -39,7 +39,8 @@ export default function StartupPage() {
         title="Help Deserving People"
         highlight="Become Self-Reliant"
         subtitle="Your donation doesn't just give aid — it gives someone a business, an income, and dignity for life."
-        image="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1400&q=80"
+        image="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1400&q=85&auto=format&fit=crop"
+        imageAlt="Young South Asian entrepreneur planning startup business supported by Fikr Fardan Foundation"
       />
 
       {/* PHILOSOPHY STRIP */}

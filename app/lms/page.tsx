@@ -47,7 +47,8 @@ export default function LMSPage() {
       <Navbar />
       <PageHero badge="LMS" title="Student" highlight="Dashboard"
         subtitle="Access your free courses, track progress, and continue learning."
-        image="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1400&q=80" />
+        image="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1400&q=85&auto=format&fit=crop"
+        imageAlt="Student using Fikr Fardan LMS dashboard for online skill development course" />
       <section style={{ background:"#F8F6FB", padding:"5.5rem 1.5rem", minHeight:"60vh", display:"flex", alignItems:"center" }}>
         <div style={{ maxWidth:420, margin:"0 auto", width:"100%" }}>
           <div style={{ background:"white", borderRadius:24, padding:"2.5rem", border:"1px solid rgba(107,45,143,.1)", boxShadow:"0 12px 50px rgba(107,45,143,.1)" }}>

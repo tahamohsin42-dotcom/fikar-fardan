@@ -10,7 +10,7 @@ export default function DonatePage() {
   return (
     <>
       <Navbar />
-      <PageHero badge="Make an Impact" title="Your Donation" highlight="Changes Lives" subtitle="Every rupee you give goes directly to people who need it most. No overhead. Full transparency." />
+      <PageHero badge="Make an Impact" title="Your Donation" highlight="Changes Lives" subtitle="Every rupee you give goes directly to people who need it most. No overhead. Full transparency." image="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1400&q=85&auto=format&fit=crop" imageAlt="Children receiving education and community support through Fikr Fardan Foundation donations" />
       <DonateClient />
       <Footer />
     </>

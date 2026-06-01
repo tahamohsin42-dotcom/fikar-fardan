@@ -73,7 +73,8 @@ export default function VolunteerPage() {
       <Navbar />
       <PageHero badge="Volunteer" title="Give Your Time," highlight="Change a Life"
         subtitle="You don't need money to make a difference. Your skills, time, and energy are equally powerful."
-        image="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1400&q=80" />
+        image="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1400&q=85&auto=format&fit=crop"
+        imageAlt="Fikr Fardan Foundation volunteers collaborating on community development project in Pakistan" />
 
       {/* WHY VOLUNTEER */}
       <section style={{ background:"#F8F6FB", padding:"5rem 1.5rem" }}>

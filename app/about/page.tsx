@@ -57,7 +57,8 @@ export default function AboutPage() {
         title="Building a Nation of"
         highlight="Self-Reliant Youth"
         subtitle="We are not just another NGO. We are a movement that believes capability is the greatest gift you can give another human being."
-        image="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1400&q=80"
+        image="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1400&q=85&auto=format&fit=crop"
+        imageAlt="Fikr Fardan Foundation community volunteers working on social impact project in Pakistan"
       />
 
       {/* MISSION BLOCK */}

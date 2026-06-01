@@ -45,7 +45,8 @@ export default function ProgramsPage() {
         title="Four Pillars of"
         highlight="Lasting Change"
         subtitle="Every program is designed around one principle: give people skills and opportunity, not just aid."
-        image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80"
+        image="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1400&q=85&auto=format&fit=crop"
+        imageAlt="Pakistani students actively learning skills in Fikr Fardan Foundation training program"
       />
 
       {/* ALL PROGRAMS */}

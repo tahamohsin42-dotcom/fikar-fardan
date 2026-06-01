@@ -9,15 +9,15 @@ import Link from "next/link";
 import { BRAND, IMPACT_STORIES, STATS } from "@/data/content";
 
 const GALLERY = [
-  { src:"https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&q=80", caption:"Youth skill training session — Lahore 2024", cat:"Skill Development" },
-  { src:"https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80", caption:"Clean water pump installation — Punjab village", cat:"Clean Water" },
-  { src:"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80", caption:"AI design workshop for young women", cat:"Skill Development" },
-  { src:"https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80", caption:"Community welfare distribution program", cat:"Community" },
-  { src:"https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80", caption:"Startup incubation — first batch graduates", cat:"Startup Support" },
-  { src:"https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80", caption:"Team volunteering at rural school project", cat:"Volunteer" },
-  { src:"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80", caption:"Mobile video creation masterclass", cat:"Skill Development" },
-  { src:"https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80", caption:"Orphan support and education program", cat:"Community" },
-  { src:"https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80", caption:"Entrepreneur cohort — strategy workshop", cat:"Startup Support" },
+  { src:"https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=85&auto=format&fit=crop",      alt:"Youth skill training workshop conducted by Fikr Fardan Foundation in Lahore",          caption:"Youth skill training session — Lahore 2024",            cat:"Skill Development" },
+  { src:"https://images.unsplash.com/photo-1518398046578-8cca57782e17?w=600&q=85&auto=format&fit=crop",      alt:"Clean water hand pump installation in rural Pakistani village by Fikr Fardan",         caption:"Clean water pump installation — Punjab village",          cat:"Clean Water" },
+  { src:"https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=85&auto=format&fit=crop",      alt:"South Asian students actively participating in digital skills development workshop",    caption:"Digital skills workshop for Pakistani youth",             cat:"Skill Development" },
+  { src:"https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=600&q=85&auto=format&fit=crop",      alt:"Fikr Fardan Foundation community welfare distribution reaching deserving families",      caption:"Community welfare distribution program",                   cat:"Community" },
+  { src:"https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=85&auto=format&fit=crop",         alt:"Startup mentorship and entrepreneurship support session for young Pakistani founders",  caption:"Startup incubation — first batch graduates",               cat:"Startup Support" },
+  { src:"https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=85&auto=format&fit=crop",         alt:"Fikr Fardan Foundation volunteers working together on community service project",       caption:"Volunteers working on rural community project",            cat:"Volunteer" },
+  { src:"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=85&auto=format&fit=crop",      alt:"Mobile video creation and content production training session for Pakistani youth",     caption:"Mobile video creation masterclass — Fikr Fardan",          cat:"Skill Development" },
+  { src:"https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=85&auto=format&fit=crop",      alt:"Children receiving orphan care education and support through Fikr Fardan Foundation",   caption:"Orphan support and education program",                     cat:"Community" },
+  { src:"https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=85&auto=format&fit=crop",      alt:"Fikr Fardan entrepreneur cohort strategy planning and business development workshop",   caption:"Entrepreneur cohort — strategy workshop",                  cat:"Startup Support" },
 ];
 
 const CATS = ["All", "Skill Development", "Clean Water", "Community", "Startup Support", "Volunteer"];
@@ -42,7 +42,8 @@ export default function ImpactPage() {
         title="Every Number Is a"
         highlight="Human Story"
         subtitle="Behind every statistic is a real person whose life changed because someone believed in capability over charity."
-        image="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1400&q=80"
+        image="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=1400&q=85&auto=format&fit=crop"
+        imageAlt="Community members gathered for Fikr Fardan Foundation social impact program in Pakistan"
       />
 
       {/* STATS */}
@@ -145,7 +146,7 @@ export default function ImpactPage() {
             {filtered.map((g, i) => (
               <FadeSection key={g.src+i} delay={i*.06}>
                 <div className="card-hover" style={{ borderRadius:18, overflow:"hidden", position:"relative", height:240, cursor:"pointer" }}>
-                  <img src={g.src} alt={g.caption} style={{ width:"100%", height:"100%", objectFit:"cover" }} />
+                  <img src={g.src} alt={(g as {src:string;alt:string;caption:string;cat:string}).alt || g.caption} loading="lazy" decoding="async" width={600} height={240} style={{ width:"100%", height:"100%", objectFit:"cover" }} />
                   <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top,rgba(13,5,32,.88) 0%,transparent 52%)" }} />
                   <div style={{ position:"absolute", bottom:0, left:0, right:0, padding:"1.25rem 1rem" }}>
                     <div style={{ fontSize:10, color:"#D4A017", fontWeight:800, letterSpacing:"1.5px", textTransform:"uppercase", marginBottom:4 }}>{g.cat}</div>
