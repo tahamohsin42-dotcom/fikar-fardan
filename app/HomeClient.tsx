@@ -19,7 +19,7 @@ export default function HomeClient() {
     <main>
       {/* ── HERO ── */}
       <section style={{ minHeight:"100vh", position:"relative", overflow:"hidden", display:"flex", alignItems:"center" }}>
-        <div style={{ position:"absolute", inset:0, backgroundImage:"url(https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&q=85&auto=format&fit=crop)", backgroundSize:"cover", backgroundPosition:"center top", filter:"brightness(.2)" }} />
+        <div style={{ position:"absolute", inset:0, backgroundImage:"url(https://images.unsplash.com/photo-1545987796-200677ee1011?w=1400&q=85&auto=format&fit=crop)", backgroundSize:"cover", backgroundPosition:"center top", filter:"brightness(.2)" }} />
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(135deg,rgba(13,5,32,.97) 0%,rgba(26,5,51,.9) 55%,rgba(13,21,51,.85) 100%)" }} />
         <div style={{ position:"absolute", top:"8%", left:"2%", width:480, height:480, borderRadius:"50%", background:"radial-gradient(circle,rgba(107,45,143,.32) 0%,transparent 70%)", pointerEvents:"none" }} />
         <div style={{ position:"absolute", bottom:"5%", right:"3%", width:560, height:560, borderRadius:"50%", background:"radial-gradient(circle,rgba(212,160,23,.12) 0%,transparent 70%)", pointerEvents:"none" }} />

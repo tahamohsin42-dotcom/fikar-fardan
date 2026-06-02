@@ -9,15 +9,71 @@ import Link from "next/link";
 import { BRAND, IMPACT_STORIES, STATS } from "@/data/content";
 
 const GALLERY = [
-  { src:"https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=85&auto=format&fit=crop",      alt:"Youth skill training workshop conducted by Fikr Fardan Foundation in Lahore",          caption:"Youth skill training session — Lahore 2024",            cat:"Skill Development" },
-  { src:"https://images.unsplash.com/photo-1518398046578-8cca57782e17?w=600&q=85&auto=format&fit=crop",      alt:"Clean water hand pump installation in rural Pakistani village by Fikr Fardan",         caption:"Clean water pump installation — Punjab village",          cat:"Clean Water" },
-  { src:"https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=85&auto=format&fit=crop",      alt:"South Asian students actively participating in digital skills development workshop",    caption:"Digital skills workshop for Pakistani youth",             cat:"Skill Development" },
-  { src:"https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=600&q=85&auto=format&fit=crop",      alt:"Fikr Fardan Foundation community welfare distribution reaching deserving families",      caption:"Community welfare distribution program",                   cat:"Community" },
-  { src:"https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=85&auto=format&fit=crop",         alt:"Startup mentorship and entrepreneurship support session for young Pakistani founders",  caption:"Startup incubation — first batch graduates",               cat:"Startup Support" },
-  { src:"https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=85&auto=format&fit=crop",         alt:"Fikr Fardan Foundation volunteers working together on community service project",       caption:"Volunteers working on rural community project",            cat:"Volunteer" },
-  { src:"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=85&auto=format&fit=crop",      alt:"Mobile video creation and content production training session for Pakistani youth",     caption:"Mobile video creation masterclass — Fikr Fardan",          cat:"Skill Development" },
-  { src:"https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=85&auto=format&fit=crop",      alt:"Children receiving orphan care education and support through Fikr Fardan Foundation",   caption:"Orphan support and education program",                     cat:"Community" },
-  { src:"https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=85&auto=format&fit=crop",      alt:"Fikr Fardan entrepreneur cohort strategy planning and business development workshop",   caption:"Entrepreneur cohort — strategy workshop",                  cat:"Startup Support" },
+  // Skill Development
+  {
+    src:"https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=600&q=85&auto=format&fit=crop",
+    alt:"Pakistani students engaged in computer skills and digital training workshop at Fikr Fardan Foundation",
+    caption:"Digital skills training — Lahore 2024", cat:"Skill Development",
+  },
+  {
+    src:"https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=85&auto=format&fit=crop",
+    alt:"South Asian youth learning graphic design and creative skills in Fikr Fardan training program",
+    caption:"Graphic design & AI tools workshop", cat:"Skill Development",
+  },
+  {
+    src:"https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&q=85&auto=format&fit=crop",
+    alt:"Photography training session — student learning camera skills through Fikr Fardan Foundation",
+    caption:"Photography skills training session", cat:"Skill Development",
+  },
+  // Clean Water
+  {
+    src:"https://images.unsplash.com/photo-1594398901394-4e34939a4fd0?w=600&q=85&auto=format&fit=crop",
+    alt:"Clean water hand pump installed in rural Pakistani village by Fikr Fardan Foundation community project",
+    caption:"Hand pump installed — Punjab village", cat:"Clean Water",
+  },
+  {
+    src:"https://images.unsplash.com/photo-1559825481-12a05cc00344?w=600&q=85&auto=format&fit=crop",
+    alt:"Rural community accessing clean drinking water through Fikr Fardan Foundation water project",
+    caption:"Clean water access for 100+ families", cat:"Clean Water",
+  },
+  // Community
+  {
+    src:"https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=600&q=85&auto=format&fit=crop",
+    alt:"Fikr Fardan Foundation community welfare distribution program reaching deserving families in Pakistan",
+    caption:"Community welfare distribution program", cat:"Community",
+  },
+  {
+    src:"https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=85&auto=format&fit=crop",
+    alt:"Children receiving orphan care education and daily support through Fikr Fardan Foundation program",
+    caption:"Orphan care & education support", cat:"Community",
+  },
+  // Startup Support
+  {
+    src:"https://images.unsplash.com/photo-1558618047-f4e730aaac04?w=600&q=85&auto=format&fit=crop",
+    alt:"Delivery rider on motorcycle earning daily income through Fikr Fardan Foundation Startup Fund program",
+    caption:"Startup Fund — bike for delivery rider", cat:"Startup Support",
+  },
+  {
+    src:"https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=85&auto=format&fit=crop",
+    alt:"Young South Asian freelancer working on laptop with Fikr Fardan startup support earning globally",
+    caption:"Freelancing setup — earning from home", cat:"Startup Support",
+  },
+  {
+    src:"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=85&auto=format&fit=crop",
+    alt:"Woman empowered by sewing machine running home-based tailoring business with Fikr Fardan support",
+    caption:"Women empowerment — sewing machine support", cat:"Startup Support",
+  },
+  // Volunteer
+  {
+    src:"https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=85&auto=format&fit=crop",
+    alt:"Fikr Fardan Foundation volunteers collaborating on community development project in rural Pakistan",
+    caption:"Volunteer team — community project", cat:"Volunteer",
+  },
+  {
+    src:"https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=85&auto=format&fit=crop",
+    alt:"Fikr Fardan Foundation volunteer trainers conducting skill development workshop for deserving youth",
+    caption:"Volunteer trainers conducting workshop", cat:"Volunteer",
+  },
 ];
 
 const CATS = ["All", "Skill Development", "Clean Water", "Community", "Startup Support", "Volunteer"];
@@ -146,7 +202,7 @@ export default function ImpactPage() {
             {filtered.map((g, i) => (
               <FadeSection key={g.src+i} delay={i*.06}>
                 <div className="card-hover" style={{ borderRadius:18, overflow:"hidden", position:"relative", height:240, cursor:"pointer" }}>
-                  <img src={g.src} alt={(g as {src:string;alt:string;caption:string;cat:string}).alt || g.caption} loading="lazy" decoding="async" width={600} height={240} style={{ width:"100%", height:"100%", objectFit:"cover" }} />
+                  <img src={g.src} alt={g.alt} loading="lazy" decoding="async" width={600} height={240} style={{ width:"100%", height:"100%", objectFit:"cover", transition:"transform .4s" }} onMouseEnter={e=>(e.currentTarget.style.transform="scale(1.05)")} onMouseLeave={e=>(e.currentTarget.style.transform="scale(1)")} />
                   <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top,rgba(13,5,32,.88) 0%,transparent 52%)" }} />
                   <div style={{ position:"absolute", bottom:0, left:0, right:0, padding:"1.25rem 1rem" }}>
                     <div style={{ fontSize:10, color:"#D4A017", fontWeight:800, letterSpacing:"1.5px", textTransform:"uppercase", marginBottom:4 }}>{g.cat}</div>
