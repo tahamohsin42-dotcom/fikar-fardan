@@ -141,7 +141,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A motorbike turns a deserving young man into a food delivery earner — consistent, daily, dignified income from day one.",
     impact:["Sustainable income","Family support","Self-reliance"],
     cta:"Sponsor a Rider",
-    image:"https://images.pexels.com/photos/4391195/pexels-photo-4391195.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.unsplash.com/photo-1526367790999-0150786686a2?w=600&q=90&auto=format&fit=crop",
     alt:"Pakistani young delivery rider on motorbike earning income through Fikr Fardan Foundation startup fund",
   },
   {
@@ -152,7 +152,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Ride-hailing on a motorbike creates flexible, daily earning power and long-term economic independence for a deserving individual.",
     impact:["Ride-hailing income","Daily earnings","Independence"],
     cta:"Donate a Bike",
-    image:"https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.unsplash.com/photo-1558618047-f4e730aaac04?w=600&q=90&auto=format&fit=crop",
     alt:"Motorcycle rider earning daily income through ride-hailing supported by Fikr Fardan Foundation",
   },
   {
@@ -163,7 +163,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Fund a complete online store setup — product sourcing, listing, packaging, and marketing — for a young Pakistani entrepreneur.",
     impact:["Online business","Digital skills","Growth potential"],
     cta:"Sponsor a Business",
-    image:"https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Young Pakistani entrepreneur managing e-commerce store on laptop with product packaging",
   },
   {
@@ -174,7 +174,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A simple handcart transforms a street vendor's life — giving him a business, daily income, and the pride of earning honestly.",
     impact:["Daily income","Self-employment","Dignified livelihood"],
     cta:"Donate a Handcart",
-    image:"https://images.pexels.com/photos/2292953/pexels-photo-2292953.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/3693271/pexels-photo-3693271.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Street vendor with handcart of goods earning daily income through Fikr Fardan Foundation support",
   },
   {
@@ -185,7 +185,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A pushcart enables immediate income generation through a small mobile business in local bazaars and neighbourhoods.",
     impact:["Small business","Immediate earning","Family support"],
     cta:"Sponsor a Pushcart",
-    image:"https://images.pexels.com/photos/2284170/pexels-photo-2284170.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/1132558/pexels-photo-1132558.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Pushcart fruit vegetable vendor in Pakistani bazaar earning sustainable income with Fikr Fardan support",
   },
   {
@@ -196,7 +196,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Equip a labourer with a wheelbarrow and tools so his physical effort is productive, sustainable, and fairly rewarded.",
     impact:["Productive work","Better income","Sustainability"],
     cta:"Support a Worker",
-    image:"https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Pakistani labourer with wheelbarrow and tools building a dignified livelihood with Fikr Fardan support",
   },
   {
@@ -207,7 +207,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Fund a complete kiryana or general store setup — shelving, stock, and signage — for a deserving family to run their own business.",
     impact:["Family business","Recurring income","Community roots"],
     cta:"Sponsor a Shop",
-    image:"https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/1005638/pexels-photo-1005638.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Pakistani small shop kiryana store owner standing at counter with products on shelves",
   },
   {
@@ -218,7 +218,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Laptop, reliable internet, and professional training — everything a young Pakistani freelancer needs to start earning globally.",
     impact:["Global earning","Digital empowerment","Remote work"],
     cta:"Empower a Freelancer",
-    image:"https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Young Pakistani freelancer working on laptop earning globally through Fikr Fardan Foundation setup support",
   },
   {
@@ -229,7 +229,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A professional camera kit — body, lens, bag, and editing setup — to launch a creative photography career with real income.",
     impact:["Creative career","Professional skills","Lasting income"],
     cta:"Sponsor a Creator",
-    image:"https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Young Pakistani photographer with professional DSLR camera kit launching creative career with Fikr Fardan",
   },
   {
@@ -240,7 +240,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Equip a young Pakistani marketer with professional tools, courses, and a laptop to build a high-demand digital career.",
     impact:["High-demand skills","Freelancing","Employment"],
     cta:"Support Digital Skills",
-    image:"https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/6177612/pexels-photo-6177612.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Young South Asian digital marketer working on laptop with social media and analytics dashboard",
   },
   {
@@ -251,7 +251,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A sewing machine empowers women to run dignified home-based tailoring businesses and achieve complete financial independence.",
     impact:["Women's empowerment","Home business","Independence"],
     cta:"Sponsor a Machine",
-    image:"https://images.pexels.com/photos/3738388/pexels-photo-3738388.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
+    image:"https://images.pexels.com/photos/3738389/pexels-photo-3738389.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
     alt:"Pakistani woman at home using sewing machine for tailoring business empowered by Fikr Fardan Foundation",
   },
 ] as const;
