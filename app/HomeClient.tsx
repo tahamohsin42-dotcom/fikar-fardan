@@ -207,9 +207,14 @@ export default function HomeClient() {
                     <div style={{ padding:"1.25rem", flex:1, display:"flex", flexDirection:"column" }}>
                       <h3 style={{ fontSize:14, fontWeight:700, color:"white", marginBottom:".4rem" }}>{p.title}</h3>
                       <p style={{ color:"rgba(255,255,255,.42)", fontSize:12, lineHeight:1.72, flex:1, marginBottom:".75rem" }}>{p.desc.slice(0,80)}...</p>
-                      <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:".75rem" }}>
-                        <div style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:"1.9rem", fontWeight:700, color:"#D4A017", lineHeight:1 }}>{p.delivered}</div>
-                        <div style={{ fontSize:11, color:"rgba(255,255,255,.5)", lineHeight:1.35 }}>{p.unit}<br />delivered so far</div>
+                      <div style={{ marginBottom:".75rem" }}>
+                        <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:4 }}>
+                          <div style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:"1.9rem", fontWeight:700, color:"#D4A017", lineHeight:1 }}>{p.delivered}</div>
+                          <div style={{ fontSize:11, color:"rgba(255,255,255,.5)", lineHeight:1.35 }}>{p.unit}<br />delivered so far</div>
+                        </div>
+                        <div style={{ fontSize:12, color:"rgba(212,160,23,.75)", fontWeight:700 }}>
+                          Sponsor: {(p as typeof p & {donationLabel:string}).donationLabel}
+                        </div>
                       </div>
                       <Link href="/startup"><button className="btn-primary" style={{ width:"100%", padding:9, borderRadius:8, fontSize:12, fontWeight:700 }}>{p.cta} →</button></Link>
                     </div>
