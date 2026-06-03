@@ -141,7 +141,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A motorbike turns a deserving young man into a food delivery earner — consistent, daily, dignified income from day one.",
     impact:["Sustainable income","Family support","Self-reliance"],
     cta:"Sponsor a Rider",
-    image:"https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85&auto=format&fit=crop",
     alt:"Pakistani young delivery rider on motorbike earning income through Fikr Fardan Foundation startup fund",
   },
   {
@@ -152,7 +152,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Ride-hailing on a motorbike creates flexible, daily earning power and long-term economic independence for a deserving individual.",
     impact:["Ride-hailing income","Daily earnings","Independence"],
     cta:"Donate a Bike",
-    image:"https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1558618047-f4e730aaac04?w=600&q=85&auto=format&fit=crop",
     alt:"Motorcycle rider earning daily income through ride-hailing supported by Fikr Fardan Foundation",
   },
   {
@@ -163,7 +163,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Fund a complete online store setup — product sourcing, listing, packaging, and marketing — for a young Pakistani entrepreneur.",
     impact:["Online business","Digital skills","Growth potential"],
     cta:"Sponsor a Business",
-    image:"https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1586880244406-556ebe35f282?w=600&q=85&auto=format&fit=crop",
     alt:"Young Pakistani entrepreneur managing e-commerce store on laptop with product packaging",
   },
   {
@@ -174,7 +174,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A simple handcart transforms a street vendor's life — giving him a business, daily income, and the pride of earning honestly.",
     impact:["Daily income","Self-employment","Dignified livelihood"],
     cta:"Donate a Handcart",
-    image:"https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=85&auto=format&fit=crop",
     alt:"Street vendor with handcart of goods earning daily income through Fikr Fardan Foundation support",
   },
   {
@@ -185,7 +185,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A pushcart enables immediate income generation through a small mobile business in local bazaars and neighbourhoods.",
     impact:["Small business","Immediate earning","Family support"],
     cta:"Sponsor a Pushcart",
-    image:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&q=85&auto=format&fit=crop",
     alt:"Pushcart fruit vegetable vendor in Pakistani bazaar earning sustainable income with Fikr Fardan support",
   },
   {
@@ -196,7 +196,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Equip a labourer with a wheelbarrow and tools so his physical effort is productive, sustainable, and fairly rewarded.",
     impact:["Productive work","Better income","Sustainability"],
     cta:"Support a Worker",
-    image:"https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=85&auto=format&fit=crop",
     alt:"Pakistani labourer with wheelbarrow and tools building a dignified livelihood with Fikr Fardan support",
   },
   {
@@ -207,7 +207,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Fund a complete kiryana or general store setup — shelving, stock, and signage — for a deserving family to run their own business.",
     impact:["Family business","Recurring income","Community roots"],
     cta:"Sponsor a Shop",
-    image:"https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=85&auto=format&fit=crop",
     alt:"Pakistani small shop kiryana store owner standing at counter with products on shelves",
   },
   {
@@ -218,7 +218,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Laptop, reliable internet, and professional training — everything a young Pakistani freelancer needs to start earning globally.",
     impact:["Global earning","Digital empowerment","Remote work"],
     cta:"Empower a Freelancer",
-    image:"https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=85&auto=format&fit=crop",
     alt:"Young Pakistani freelancer working on laptop earning globally through Fikr Fardan Foundation setup support",
   },
   {
@@ -229,7 +229,7 @@ export const STARTUP_PROGRAMS = [
     desc:"A professional camera kit — body, lens, bag, and editing setup — to launch a creative photography career with real income.",
     impact:["Creative career","Professional skills","Lasting income"],
     cta:"Sponsor a Creator",
-    image:"https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=85&auto=format&fit=crop",
     alt:"Young Pakistani photographer with professional DSLR camera kit launching creative career with Fikr Fardan",
   },
   {
@@ -240,7 +240,7 @@ export const STARTUP_PROGRAMS = [
     desc:"Equip a young Pakistani marketer with professional tools, courses, and a laptop to build a high-demand digital career.",
     impact:["High-demand skills","Freelancing","Employment"],
     cta:"Support Digital Skills",
-    image:"https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&q=85&auto=format&fit=crop",
+    image:"https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=85&auto=format&fit=crop",
     alt:"Young South Asian digital marketer working on laptop with social media and analytics dashboard",
   },
   {
