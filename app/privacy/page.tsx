@@ -4,7 +4,7 @@ import PageHero from "@/components/shared/PageHero";
 import { BRAND } from "@/data/content";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title:"Privacy Policy", description:"Privacy Policy of Fikr Fardan Foundation" };
+export const metadata: Metadata = { title:"Privacy Policy", description:"Privacy Policy of Fikr Fardan" };
 
 export default function PrivacyPage() {
   const Section = ({ title, children }: { title:string; children:React.ReactNode }) => (

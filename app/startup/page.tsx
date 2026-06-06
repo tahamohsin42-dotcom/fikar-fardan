@@ -113,6 +113,7 @@ export default function StartupPage() {
                   <span>{BRAND.bankName}</span>
                   <span style={{ fontWeight:700, color:"#555" }}>Account</span>
                   <span>{BRAND.bankTitle}</span>
+                  <span style={{fontSize:12,color:'#888'}}>Branch: {BRAND.bankBranch}</span>
                   <span style={{ fontWeight:700, color:"#555" }}>IBAN</span>
                   <span style={{ fontFamily:"monospace", fontSize:12, letterSpacing:".5px", color:"#6B2D8F", fontWeight:700 }}>{BRAND.bankIBAN}</span>
                   <span style={{ fontWeight:700, color:"#555" }}>Program</span>
@@ -226,7 +227,7 @@ export default function StartupPage() {
                     onChange={e => setForm(f => ({ ...f, screenshot: e.target.files?.[0] ?? null }))}
                     style={{ cursor:"pointer" }} />
                   <span style={{ fontSize:11, color:"#aaa", marginTop:3, display:"block" }}>
-                    Transfer to Meezan Bank IBAN: {BRAND.bankIBAN} — then upload screenshot
+                    Transfer to {BRAND.bankName} IBAN: {BRAND.bankIBAN} — then upload screenshot
                   </span>
                 </div>
 

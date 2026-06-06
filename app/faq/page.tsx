@@ -8,7 +8,7 @@ import { BRAND } from "@/data/content";
 
 const FAQS = [
   { cat:"Donations", q:"Where does my donation go?", a:"100% of your donation goes to the specified cause. We maintain full transparency with detailed records and publish regular impact reports. Your funds are never used for administrative overhead without disclosure." },
-  { cat:"Donations", q:"How do I donate?", a:"Visit our Donate page, select a cause, fill the form, and transfer via Meezan Bank IBAN PK36MEZN0003180106685083 (Fikr Fardan Foundation). Upload your payment screenshot in the form and our team will confirm within 24 hours." },
+  { cat:"Donations", q:"How do I donate?", a:"Visit our Donate page, select a cause, fill the form, and transfer via Faysal Bank Limited — Account: Fikr Fardan — IBAN: PK55FAYS4004499000000561. Upload your payment screenshot and our team will confirm within 24 hours." },
   { cat:"Donations", q:"Do I get a receipt?", a:"Yes! Every donor receives a confirmation email with a unique receipt ID within 24 hours of verified payment. Download-ready PDF receipts are available on request." },
   { cat:"Donations", q:"Can I donate from outside Pakistan?", a:"Yes. International donors can use bank wire transfer. Contact us at fikrfardan@gmail.com for international transfer details." },
   { cat:"Courses",   q:"Are the courses really free?", a:"Absolutely 100% free for deserving youth. No hidden fees, no premium tiers. We believe skill education is a right, not a privilege." },

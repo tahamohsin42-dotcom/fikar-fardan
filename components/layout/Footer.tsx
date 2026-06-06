@@ -122,8 +122,10 @@ export default function Footer() {
             {/* Bank */}
             <div style={{ marginTop:"1rem", background:"rgba(107,45,143,.08)", borderRadius:10, padding:"10px 12px", fontSize:12, color:"rgba(255,255,255,.5)", lineHeight:1.7 }}>
               <div style={{ fontWeight:700, color:"rgba(255,255,255,.7)" }}>{BRAND.bankTitle}</div>
-              <div>{BRAND.bankName}</div>
-              <div style={{ fontFamily:"monospace", fontSize:10, letterSpacing:".5px" }}>{BRAND.bankIBAN}</div>
+              <div style={{ fontSize:11 }}>{BRAND.bankName}</div>
+              <div style={{ fontSize:11 }}>Branch: {BRAND.bankBranch}</div>
+              <div style={{ fontFamily:"monospace", fontSize:10, letterSpacing:".5px", color:"#D4A017" }}>{BRAND.bankAccount}</div>
+              <div style={{ fontFamily:"monospace", fontSize:10, letterSpacing:".5px", color:"#D4A017", wordBreak:"break-all" }}>{BRAND.bankIBAN}</div>
             </div>
           </div>
         </div>
